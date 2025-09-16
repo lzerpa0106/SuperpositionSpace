@@ -44,13 +44,13 @@ st.title("Application of the Superposition principle to solutions of the diffusi
 nwells = 2
 #r = np.array([100, 200]) # Distance in ft from wells to specific point within reservoir
 r = np.zeros((2))
-r[0] = st.slider("r_1", 0.0, 10000.0, 100)
-r[1] = st.slider("r_2", 0.0, 10000.0, 100)
+r[0] = st.slider("r_1", 0.0, 10000.0, 100.0)
+r[1] = st.slider("r_2", 0.0, 10000.0, 100.0)
 
 #q = np.array([1000, 2500]) # Production rate in STB/day for the wells
 q = np.zeros((2))
-q[0] = st.slider("q_1", 0.0, 10000.0, 1000)
-q[1] = st.slider("q_2", 0.0, 10000.0, 1000)
+q[0] = st.slider("q_1", 0.0, 10000.0, 100.0)
+q[1] = st.slider("q_2", 0.0, 10000.0, 100.0)
 
 p_i = 7500.0 # initial reservoir pressure, psia
 B = 1.205 # formation volume factor, RB/STB
