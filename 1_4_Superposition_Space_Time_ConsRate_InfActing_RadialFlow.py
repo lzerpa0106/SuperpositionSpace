@@ -71,7 +71,7 @@ ax.set_xlabel('Time (hr)',fontsize='12',fontweight='bold', fontname='Verdana')
 ax.set_ylabel('Pressure (psia)',fontsize='12',fontweight='bold',fontname='Verdana')
 ax.tick_params(direction='in',width=1.5,length=8.0, labelsize=12.0)
 ax.set_xscale('log')
-ax.set(xlim=(0.1, 1000), ylim=(4000,8000))
+ax.set(xlim=(0.1, 10000.0), ylim=(4000.0,8000.0))
 for tick in ax.get_xticklabels():
     tick.set_fontname('Verdana')
 for tick in ax.get_yticklabels():
